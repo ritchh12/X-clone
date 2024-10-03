@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./src/output.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <<link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&display=swap" rel="stylesheet">
+        <style>
+            li {
+                cursor: pointer;
+            }
+
+            .header,
+            .search {
+                backdrop-filter: blur(10px);
+                /* Applies the blur effect */
+                -webkit-backdrop-filter: blur(10px);
+                /* For Safari compatibility */
+                background-color: rgba(0, 0, 0, 0.5);
+                /* Adds a semi-transparent background color */
+            }
+        </style>
+
+</head>
+
+<body class="bg-black  ">
+
+    <div class=" container flex  bg-black text-white ">
+        <!-- ••••••••••••••••••••••••••••••••••••••••••••••••••••••••LEFT••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••• -->
+        <!-- ••••••••••••••••••••••••••••••••••••••••••••••••••••••••LEFT••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••• -->
+        <!-- ••••••••••••••••••••••••••••••••••••••••••••••••••••••••LEFT••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••• -->
+        <!-- ••••••••••••••••••••••••••••••••••••••••••••••••••••••••LEFT••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••• -->
+
+        <div class="sidebar   w-[130px]  md:w-full ">
+            <ul class="flex flex-col md:  w-fit ml-[250px] gap-5 font-bold text-[18px]  ">
+                <li class="flex justify-start items-center gap-2">
+                    <svg viewBox="0 0 24 24" aria-hidden="true" class="w-10 fill-white">
+                        <g>
+                            <path
+                                d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z">
+                            </path>
+                        </g>
+                    </svg>
+                </li>
+                <li class="flex justify-start items-center gap-2">
+                    <span class="material-symbols-outlined">home</span>
+                    <span class="hidden md:block" >Home</span>
+                </li>
+                <li class="flex justify-start items-center gap-2">
+                    <span class="material-symbols-outlined">search</span>
+                    <span class="hidden md:block" >Search</span>
+                </li>
+                <li class="flex justify-start items-center gap-2">
+                    <span class="material-symbols-outlined">notifications</span>
+                    <span class="hidden md:block" >Notifications</span>
+                </li>
+                <li class="flex justify-start items-center gap-2">
+                    <span class="material-symbols-outlined">mail</span><span  class="hidden md:block" > Mail</span>
+              </li>
+                <li class="flex justify-start items-center gap-2">
+                    <span class="material-symbols-outlined">indeterminate_check_box</span><span class="hidden md:block"> Grok </span>
+              </li>
+                <li class="flex justify-start items-center gap-2">
+                    <span class="material-symbols-outlined">bookmark</span> <span class="hidden md:block"> Bookmarks </span>
+                </li>
+                <li class="flex justify-start items-center gap-2">
+                    <span class="material-symbols-outlined">group</span> <span class="hidden md:block"> Group </span>
+               </li>
+                <li class="flex justify-start  items-center gap-2">
+                    <svg viewBox="0 0 24 24" aria-hidden="true" class="w-6 fill-white">
+                        <g>
+                            <path
+                                d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z">
+                            </path>
+                        </g>
+                    </svg><span class="hidden md:block"> Premium </span>
+                </li>
+                <li class="flex justify-start items-center gap-2">
+                    <span class="material-symbols-outlined">flash_on</span><span class="hidden md:block"> Verified Orgs </span>
+                </li>
+                <li class="flex justify-start items-center gap-2">
+                    <span class="material-symbols-outlined">person</span><span class="hidden md:block"> Profile </span>
+                </li>
+                <li class="flex  justify-start items-center  gap-2">
+                    <span class="material-symbols-outlined ">more_horiz</span><span class="hidden md:block">More</span>
+                </li>
+                <div class="post text-[15px] bg-blue-400 text-center cursor-pointer rounded-full p-2">Post</div>
+
+
+                <div class="acc flex items-center gap-3">
+                    <div class="profile cursor-pointer">
+                        <img class=" rounded-full w-10 h-10 object-cover"
+                            src="https://www.travelmedia.ie/wp-content/uploads/2014/04/twitter.jpg" alt="">
+                    </div>
+
+                    <div class="name my-5">
+                        <h1 class="cursor-pointer">Ritesh Chauhan</h1>
+                        <p class="font-normal cursor-pointer opacity-60">@ritchh12</p>
+                    </div>
+                    <div class="dot cursor-pointer"><span class="material-symbols-outlined">
+                            more_horiz
+                        </span></div>
+                </div>
+            </ul>
+        </div>
+
+        <!-- •••••••••••••••••••••••••MAINNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••• -->
+        <!-- •••••••••••••••••••••••••MAINNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••• -->
+        <!-- •••••••••••••••••••••••••MAINNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••• -->
+        <!-- •••••••••••••••••••••••••MAINNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••• -->
+
+        <div class="main bg-black border border-y-black border-x-white border-opacity-20  md:w-full  ">
+
+            <div class="header p-2 bg-black backdrop-filter-blur font-bold flex justify-around sticky top-1 ">
+
+                <div class="forYou flex justify-center  w-1/2">For You</div>
+                <div class="following flex justify-center w-1/2">Following</div>
+                <div class="setting">
+                    <span class="material-symbols-outlined">
+                        settings
+                    </span>
+                </div>
+
+            </div>
+            <div class="hr h-[4px] w-[15%] ml-[88px] rounded-full opacity- bg-blue-400 "></div>
+            <hr class="opacity-20">
+
+            <div class="whatsH flex p-3 m-3 gap-3">
+                <div class="dp">
+                    <img class=" rounded-full w-10 h-10 object-cover"
+                        src="https://www.travelmedia.ie/wp-content/uploads/2014/04/twitter.jpg" alt="">
+                </div>
+
+
+                <div class="input">
+                    <input type="text"
+                        class="w-full mx-3  bg-black text-xl placeholder-white placeholder-opacity-40 outline-none "
+                        placeholder="What is happening?!">
+                    <div class="reply my-3 font-bold mx-3 justify-start flex items-center gap-2 text-sm text-blue-500">
+                        <span class="material-symbols-outlined">
+                            public
+                        </span>
+                        <p>
+                            Everyone can reply
+                        </p>
+                    </div>
+                    <div class="hr h-[1px] w-[400px] opacity-20 bg-white"></div>
+                    <div class="icon flex justify-start items-center mt-5 gap-5 ">
+                        <span class="material-symbols-outlined">
+                            image
+                        </span>
+                        <span class="material-symbols-outlined">
+                            gif_box
+                        </span>
+                        <span class="material-symbols-outlined">
+                            ballot
+                        </span>
+                        <span class="material-symbols-outlined">
+                            mood
+                        </span>
+                        <span class="material-symbols-outlined">
+                            calendar_clock
+                        </span>
+                        <span class="material-symbols-outlined">
+                            location_on
+                        </span>
+                        <div
+                            class=" ml-16 post text-[15px] inline-block w-1/5 bg-blue-400 text-center cursor-pointer rounded-full p-2">
+                            Post</div>
+
+                    </div>
+                </div>
+
+            </div>
+            <div class="hr h-[1px] w-full opacity-20 bg-white"></div>
+            <p class="text-center text-blue-500 cursor-pointer p-3">
+                Show 322 Posts
+            </p>
+
+            <div class="hr h-[1px] w-full opacity-20 bg-white"></div>
+
+            <div class="content flex flex-col">
+
+                <!--••••••••••••••••••••• POSTSSSSSSSSSSSS••••••••••••••••• -->
+                <div class="post flex gap-2 p-3 ">
+                    <div class="dpp ">
+                        <img class=" rounded-full w-10 h-10 object-cover"
+                            src="https://www.travelmedia.ie/wp-content/uploads/2014/04/twitter.jpg" alt="">
+                    </div>
+
+                    <div class="details">
+
+                        <span class="font-bold">Ritesh Chauhan </span>
+                        <span class="opacity-40"> @ritchhh12 • 20 Jul </span>
+                        <span class="dot ml-32 opacity-40">•••
+                        </span>
+                        <div class="caption ">Lamine Yamal arriving at his school after winning the Euros</div>
+
+                        <div class="attachment mt-5 w-[400px]"><img class="border border-white border-opacity-20 rounded-lg"
+                                src="https://pbs.twimg.com/media/GS5fleYXIAAeqzz?format=jpg&name=small" alt="">
+                        </div>
+
+
+                        <div class=" opacity-60 font-normal text-sm ">
+                            <div class="ctr flex gap-[33px] p-3 ">
+
+                                <div class="flex justify-center items-center gap- cursor-pointer">
+                                    <span class="material-symbols-outlined">
+                                        reply
+                                    </span>9.4k
+                                </div>
+                                <div class="flex justify-center items-center gap- cursor-pointer">
+                                    <span class="material-symbols-outlined">
+                                        laps </span>56k
+                                </div>
+                                <div class="flex justify-center items-center gap- cursor-pointer">
+                                    <span class="material-symbols-outlined">
+                                        favorite
+                                    </span>78k
+
+                                </div>
+                                <div class="flex justify-center items-center gap- cursor-pointer">
+                                    <span class="material-symbols-outlined">
+                                        bar_chart
+                                    </span>11M
+                                </div>
+                                <div class="flex justify-center items-center gap-2 cursor-pointer">
+                                    <span class="material-symbols-outlined">
+                                        bookmark
+                                    </span>
+                                    <span class="material-symbols-outlined">
+                                        upload_2
+                                    </span>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="hr h-[1px] w-full opacity-20 bg-white"></div>
+
+                <!--••••••••••••••••••••• POSTSSSSSSSSSSSS••••••••••••••••• -->
+                <!--••••••••••••••••••••• POSTSSSSSSSSSSSS••••••••••••••••• -->
+                <div class="post flex gap-2 p-3 ">
+                    <div class="dpp ">
+                        <img class=" rounded-full w-10 h-10 object-cover"
+                            src="https://www.travelmedia.ie/wp-content/uploads/2014/04/twitter.jpg" alt="">
+                    </div>
+
+                    <div class="details">
+
+                        <span class="font-bold">Ritesh Chauhan </span>
+                        <span class="opacity-40"> @ritchhh12 • 20 Jul </span>
+                        <span class="dot ml-32 opacity-40">•••
+                        </span>
+                        <div class="caption ">Lamine Yamal arriving at his school after winning the Euros</div>
+
+                        <div class="attachment mt-5 w-[400px]"><img class="border border-white border-opacity-20 rounded-lg"
+                                src="https://pbs.twimg.com/media/GS5fleYXIAAeqzz?format=jpg&name=small" alt="">
+                        </div>
+
+
+                        <div class=" opacity-60 font-normal text-sm ">
+                            <div class="ctr flex gap-[33px] p-3 ">
+
+                                <div class="flex justify-center items-center gap- cursor-pointer">
+                                    <span class="material-symbols-outlined">
+                                        reply
+                                    </span>9.4k
+                                </div>
+                                <div class="flex justify-center items-center gap- cursor-pointer">
+                                    <span class="material-symbols-outlined">
+                                        laps </span>56k
+                                </div>
+                                <div class="flex justify-center items-center gap- cursor-pointer">
+                                    <span class="material-symbols-outlined">
+                                        favorite
+                                    </span>78k
+
+                                </div>
+                                <div class="flex justify-center items-center gap- cursor-pointer">
+                                    <span class="material-symbols-outlined">
+                                        bar_chart
+                                    </span>11M
+                                </div>
+                                <div class="flex justify-center items-center gap-2 cursor-pointer">
+                                    <span class="material-symbols-outlined">
+                                        bookmark
+                                    </span>
+                                    <span class="material-symbols-outlined">
+                                        upload_2
+                                    </span>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="hr h-[1px] w-full opacity-20 bg-white"></div>
+
+                <!--••••••••••••••••••••• POSTSSSSSSSSSSSS••••••••••••••••• -->
+                <!--••••••••••••••••••••• POSTSSSSSSSSSSSS••••••••••••••••• -->
+                <div class="post flex gap-2 p-3 ">
+                    <div class="dpp ">
+                        <img class=" rounded-full w-10 h-10 object-cover"
+                            src="https://www.travelmedia.ie/wp-content/uploads/2014/04/twitter.jpg" alt="">
+                    </div>
+
+                    <div class="details">
+
+                        <span class="font-bold">Ritesh Chauhan </span>
+                        <span class="opacity-40"> @ritchhh12 • 20 Jul </span>
+                        <span class="dot ml-32 opacity-40">•••
+                        </span>
+                        <div class="caption ">Lamine Yamal arriving at his school after winning the Euros</div>
+
+                        <div class="attachment mt-5 w-[400px]"><img class="border border-white border-opacity-20 rounded-lg"
+                                src="https://pbs.twimg.com/media/GS5fleYXIAAeqzz?format=jpg&name=small" alt="">
+                        </div>
+
+
+                        <div class=" opacity-60 font-normal text-sm ">
+                            <div class="ctr flex gap-[33px] p-3 ">
+
+                                <div class="flex justify-center items-center gap- cursor-pointer">
+                                    <span class="material-symbols-outlined">
+                                        reply
+                                    </span>9.4k
+                                </div>
+                                <div class="flex justify-center items-center gap- cursor-pointer">
+                                    <span class="material-symbols-outlined">
+                                        laps </span>56k
+                                </div>
+                                <div class="flex justify-center items-center gap- cursor-pointer">
+                                    <span class="material-symbols-outlined">
+                                        favorite
+                                    </span>78k
+
+                                </div>
+                                <div class="flex justify-center items-center gap- cursor-pointer">
+                                    <span class="material-symbols-outlined">
+                                        bar_chart
+                                    </span>11M
+                                </div>
+                                <div class="flex justify-center items-center gap-2 cursor-pointer">
+                                    <span class="material-symbols-outlined">
+                                        bookmark
+                                    </span>
+                                    <span class="material-symbols-outlined">
+                                        upload_2
+                                    </span>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="hr h-[1px] w-full opacity-20 bg-white"></div>
+
+                <!--••••••••••••••••••••• POSTSSSSSSSSSSSS••••••••••••••••• -->
+           
+            </div>
+
+        </div>
+
+        <!-- ••••••••••••••••••••••••••RIGHT•••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••• -->
+        <!-- ••••••••••••••••••••••••••RIGHT•••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••• -->
+        <!-- ••••••••••••••••••••••••••RIGHT•••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••• -->
+        <!-- ••••••••••••••••••••••••••RIGHT•••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••• -->
+
+        <div class="right bg-black  border-opacity-20 hidden w-0 md:w-full  md:block ">
+            <div class=" sticky top-0">
+
+                <div class="search sticky top-1 ">
+                    <input type="text"
+                        class="w-1/2 rounded-full bg-black border border-white border-opacity-20 px-3 py-2 mx-3 text-white"
+                        placeholder="search">
+                </div>
+
+                <div class="whats  w-1/2 m-3 p-3 bg-black border border-white border-opacity-20 rounded-2xl">
+
+                    <h1 class="text-2xl font-bold ">What's happening</h1>
+
+                    <div class="item my-5">
+                        <div class="opacity-30 text-sm">Sports • Trending</div>
+                        <div class="font-bold">#PushZelina</div>
+                        <div class="opacity-30 text-sm">2174 posts</div>
+                    </div>
+                    <div class="item my-5">
+                        <div class="opacity-30 text-sm">Trending</div>
+                        <div class="font-bold">Logan paul</div>
+                        <div class="opacity-30 text-sm">3548 posts</div>
+                    </div>
+                    <div class="item my-5">
+                        <div class="opacity-30 text-sm">Sports • Trending</div>
+                        <div class="font-bold">#SummerSlam</div>
+                        <div class="opacity-30 text-sm">5394 posts</div>
+                    </div>
+
+                </div>
+
+
+
+
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
